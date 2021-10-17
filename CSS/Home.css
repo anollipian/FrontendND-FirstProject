@@ -1,0 +1,102 @@
+img {
+    width: 100%;
+    height: auto;
+}
+
+
+.container{
+    display: grid;
+    grid-template-areas: 
+    "hh"
+    "mc"
+    "sd"
+    "ff";
+}
+
+
+.header{
+    background-color: rgb(196, 44, 44);
+    grid-area: hh;
+    background-image: url(../Images/leaves.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 9vh;
+    text-align: center;
+    color: white;
+    
+}
+
+
+.sidebar{
+    background-color: rgb(100, 160, 100);
+    display: flex;
+    flex-direction: column;
+    grid-area: sd;
+    align-items: center;
+    color: white;
+    padding-bottom: 50px;
+}
+
+
+.sidebar a{  
+    font-size: 2vw;
+    color: #fff9;
+}
+
+.maincontent{
+    background-color:white;
+    grid-area: mc;     
+    
+}
+
+.footer{
+    border: 2px solid #ABE9CA;
+    /*background-color: chartreuse;*/
+    grid-area: ff;
+    text-align: center;
+
+}
+
+.allposts{
+    display: grid;
+    grid-auto-flow: row;
+    position:static;
+    padding: 2em;
+  }
+
+
+  .post{
+    width: 90%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px;
+
+  }
+  
+  div.posttext {
+    text-align: center;
+    padding: 10px 20px;
+}
+
+@media(min-width: 900px){
+    .container{
+        display: grid;
+        grid-template-areas: 
+        "hh hh"
+        "mc sd"
+        "mc sd"
+        "ff ff";
+        height: 100vh;
+        grid-template-rows: 20% 70%;
+        grid-template-columns: 70% 30%;
+        border:3.5em;
+        padding-top: 0;
+    }
+    .allposts{
+        display: grid;
+        grid-template-columns: 50% 50%;  
+        height: 50%; 
+        }
+    
+}

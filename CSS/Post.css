@@ -1,0 +1,89 @@
+.container{
+    display: grid;
+    grid-template-areas:
+    "tt"
+    "pd"
+    "pp"
+    "ii"
+    "di";
+    /*border: 2px solid #ABE9CA;*/
+    grid-gap: 10px;
+}
+
+
+.postdetails{
+    /*border: 2px solid #ABE9CA;*/
+    grid-area:pd ;
+    display:grid;
+    grid-auto-flow: row;    
+
+}
+
+
+.title{
+    grid-area: tt;
+
+    border: 2px;
+    border: 2px solid #ABE9CA;
+    background-color: rgb(100, 160, 100);
+    color:white;
+    display: flex;
+    flex-direction: row;
+    gap:50%
+}
+
+
+img {
+    width: 100%;
+    height: auto;
+    /*border: 2px solid #ABE9CA;*/
+
+}
+
+
+.postpic{
+    grid-area: pp;
+    /*border: 2px solid #ABE9CA;*/
+
+}
+
+
+.ingredients{
+    grid-area:ii;
+    /*border: 2px solid #ABE9CA;*/
+
+}
+
+
+.directions{
+    grid-area: di;
+    /*border: 2px solid #ABE9CA;*/
+
+}
+
+
+@media(min-width: 900px){
+    .container{
+    grid-template-areas:
+    "tt tt tt" /*title*/
+    "pd pd pd" /*postDescription*/
+    "pp pp pp" /*postPicture*/
+    "ii .. di"; /*ingredients , directions*/
+    grid-gap: 10px;
+    }
+
+    .postpic{
+
+    }
+
+    .ingredients,.directions{
+        font-size: 20px;
+    }
+
+    .postdetails{
+        grid-auto-flow: column;    
+    
+    }
+
+}
+
