@@ -73,12 +73,12 @@ img {
 @media(min-width: 900px){
     .container{
     grid-template-areas:
-    "tt tt tt" /*title*/
-    "pd pd pd" /*postDescription*/
-    "pp pp .." /*postPicture*/
-    "ii .. di" /*ingredients , directions*/
-    ".. au au"
-    "ff ff ff";
+    "tt tt tt tt" /*title*/
+    "pd pd pd pd" /*postDescription*/
+    ".. pp pp .." /*postPicture*/
+    "ii .. .. di" /*ingredients , directions*/
+    ".. au au .."
+    "ff ff ff ff";
     grid-gap: 10px;
     }
 
