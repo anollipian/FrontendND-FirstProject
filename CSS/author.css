@@ -1,0 +1,29 @@
+.authorInfo{
+    grid-area: au;
+    display:grid;
+    grid-template-areas:
+    "img nm"
+    "img tt"
+    ".. bio";
+    border-radius: 03.5em;
+    border: 2px solid rgb(196, 190, 190);
+    grid-gap: 5px;;
+}
+
+.authorName{
+    grid-area: nm;
+}
+
+.authorImg{
+    grid-area: img;
+    padding: 4px;
+    border-radius: 03.5em;
+}
+
+.authorTitle{
+    grid-area: tt;
+}
+
+.authorBio{
+    grid-area: bio;
+}

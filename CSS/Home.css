@@ -1,15 +1,22 @@
+@import "../CSS/style.css";
+@import "../CSS/author.css";
+@import url('https://fonts.googleapis.com/css2?family=Andada+Pro&display=swap');
+
+
+
 img {
     width: 100%;
     height: auto;
 }
 
 
-.container{
+.homeContainer{
     display: grid;
     grid-template-areas: 
     "hh"
     "mc"
     "sd"
+    "au"
     "ff";
 }
 
@@ -23,6 +30,7 @@ img {
     background-size: cover;
     font-size: 9vh;
     text-align: center;
+    font-family: 'Andada Pro', serif;
     color: white;
     
 }
@@ -40,7 +48,7 @@ img {
 
 
 .sidebar a{  
-    font-size: 2vw;
+    font-size: 4vw;
     color: #fff9;
 }
 
@@ -50,13 +58,13 @@ img {
     
 }
 
-.footer{
+/*.footer{
     border: 2px solid #ABE9CA;
-    /*background-color: chartreuse;*/
+    /*background-color: chartreuse;
     grid-area: ff;
     text-align: center;
 
-}
+}*/
 
 .allposts{
     display: grid;
@@ -80,12 +88,12 @@ img {
 }
 
 @media(min-width: 900px){
-    .container{
+    .homeContainer{
         display: grid;
         grid-template-areas: 
         "hh hh"
         "mc sd"
-        "mc sd"
+        "mc au"
         "ff ff";
         height: 100vh;
         grid-template-rows: 20% 70%;
@@ -97,6 +105,12 @@ img {
         display: grid;
         grid-template-columns: 50% 50%;  
         height: 50%; 
-        }
+    }
+
+    .sidebar a{  
+        font-size: 2vw;
+        color: #fff9;
+    }
     
 }
+

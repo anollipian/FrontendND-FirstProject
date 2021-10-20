@@ -1,0 +1,42 @@
+.footer{
+    border: 2px solid #ABE9CA;
+    /*background-color: chartreuse;*/
+    grid-area: ff;
+    text-align: center;
+}
+
+.postpic figcaption{
+    text-align: center;
+}
+
+.backbutton {
+    background-color: white;
+    border-radius: 30%;
+    color: rgb(100, 160, 100);;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
+
+  /* Styling Social Media Buttons*/
+  
+  .fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+  

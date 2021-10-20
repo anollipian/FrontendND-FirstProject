@@ -1,3 +1,8 @@
+@import "../CSS/style.css";
+@import "../CSS/author.css";
+
+
+
 .container{
     display: grid;
     grid-template-areas:
@@ -5,14 +10,14 @@
     "pd"
     "pp"
     "ii"
-    "di";
-    /*border: 2px solid #ABE9CA;*/
+    "di"
+    "au"
+    "ff";
     grid-gap: 10px;
 }
 
 
 .postdetails{
-    /*border: 2px solid #ABE9CA;*/
     grid-area:pd ;
     display:grid;
     grid-auto-flow: row;    
@@ -54,11 +59,14 @@ img {
 
 }
 
-
 .directions{
     grid-area: di;
     /*border: 2px solid #ABE9CA;*/
 
+}
+
+.footer{
+    grid-area: ff;
 }
 
 
@@ -67,18 +75,18 @@ img {
     grid-template-areas:
     "tt tt tt" /*title*/
     "pd pd pd" /*postDescription*/
-    "pp pp pp" /*postPicture*/
-    "ii .. di"; /*ingredients , directions*/
+    "pp pp .." /*postPicture*/
+    "ii .. di" /*ingredients , directions*/
+    ".. au au"
+    "ff ff ff";
     grid-gap: 10px;
     }
 
-    .postpic{
-
-    }
 
     .ingredients,.directions{
         font-size: 20px;
     }
+
 
     .postdetails{
         grid-auto-flow: column;    
@@ -86,4 +94,6 @@ img {
     }
 
 }
+
+
 
